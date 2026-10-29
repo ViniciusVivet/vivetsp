@@ -1,140 +1,55 @@
-# VIVET SP | Arte, Codigo e Corre
+# VIVET SP — Arte, código & vida real
 
-Site oficial do **VIVET SP**, rapper da Zona Leste de Sao Paulo, criador de conteudo, estudante de tecnologia, instrutor tecnico e fundador da Orbitamos.
+Página pessoal de Douglas Vinicius (Vivet), rapper, criador e desenvolvedor da Zona Leste de São Paulo.
 
-O projeto nasce como um hub pessoal, artistico e profissional. A proposta nao e separar artista de programador. A ideia central e mostrar a identidade completa:
+## Experiência
 
-> **VIVET = Arte + Codigo + Corre**
+- **Início:** uma abertura fotográfica e quatro cards inteiramente clicáveis para vídeos, BET777, GitHub e o catálogo no Spotify. O destino aparece no próprio card.
+- **Sobre:** biografia curta, retrato real do artista e conexão com a Orbitamos.
+- **Contato:** e-mail, botão para copiar o endereço, Instagram e Orbitamos.
+- **/links:** página compacta para a bio, com os mesmos destinos verificados e sem duplicações.
 
-## Sobre o projeto
+A navegação permanece visível no celular. O site oferece foco de teclado, link para pular ao conteúdo, estados de navegação e suporte a movimento reduzido. Não há formulário sem integração ou número fictício de WhatsApp.
 
-Este site apresenta o Vivet como artista independente, criador e construtor de solucoes digitais. Ele funciona como:
+## Desenvolvimento
 
-- pagina oficial do artista;
-- portfolio vivo de tecnologia;
-- central de links para musica, conteudo e projetos;
-- funil comercial para sites e experiencias digitais;
-- ponte para a Orbitamos;
-- manifesto para jovens da periferia que querem estudar tecnologia sem abandonar a arte.
-
-A narrativa principal e direta: a tecnologia nao matou a arte. Ela fortalece a estrutura para a arte sobreviver, escalar e virar negocio.
-
-## Identidade
-
-O site trabalha uma estetica escura, urbana e tecnologica, misturando referencias de rap/trap brasileiro, quebrada, programacao, cyberpunk, robótica, ensino, empreendedorismo e artista independente.
-
-Frase-guia:
-
-> Rapper da Zona Leste construindo arte, codigo e futuro.
-
-Slogan:
-
-> Arte, Codigo e Corre.
-
-## Principais secoes
-
-- **Hero:** primeira dobra de impacto com manifesto visual e CTAs para musica, tecnologia, orcamento e Orbitamos.
-- **Numeros:** metricas editaveis para prova social sem inventar dados.
-- **Musica:** destaque para BET777, Sem Simpatia, Casa Bomba, clipes e bastidores.
-- **Tech / Projetos:** projetos digitais, estudos, aulas, Supabase, Next.js, Orbitamos e YUME Atelier.
-- **Manifesto Quebrada Tech:** secao emocional sobre periferia, arte, estudo, tecnologia e futuro.
-- **Servicos:** funil comercial para sites, landing pages, portfolios, paginas de links, vitrines e integracao com WhatsApp.
-- **Orbitamos:** ponte para o laboratorio de solucoes digitais do Vivet.
-- **Timeline:** jornada em formato de progresso/missao.
-- **Links oficiais:** alternativa profissional ao link da bio.
-- **/links:** pagina premium para bio do Instagram.
-
-## Stack
-
-- **Next.js** com App Router
-- **TypeScript**
-- **Tailwind CSS**
-- **Framer Motion**
-- **Lucide React**
-- **ESLint**
-
-## Arquitetura
-
-```txt
-src/
-  app/
-    links/
-      page.tsx
-    globals.css
-    layout.tsx
-    page.tsx
-  components/
-    cta-button.tsx
-    footer.tsx
-    header.tsx
-    hero.tsx
-    links-section.tsx
-    manifesto-section.tsx
-    music-section.tsx
-    orbitamos-section.tsx
-    project-card.tsx
-    section-title.tsx
-    services-section.tsx
-    stat-card.tsx
-    stats-section.tsx
-    tech-projects-section.tsx
-    timeline-section.tsx
-  data/
-    profile.ts
-```
-
-## Conteudo editavel
-
-Os principais textos, links, metricas, musicas, projetos, servicos e timeline ficam centralizados em:
-
-```txt
-src/data/profile.ts
-```
-
-Isso permite atualizar numeros e links sem mexer no layout.
-
-## Como rodar localmente
+Node.js 20 ou superior.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Depois acesse:
-
-```txt
-http://localhost:3000
-```
-
-## Validacao
+Abra http://localhost:3000. Para validar a produção:
 
 ```bash
-npm run lint
 npm run build
+npm start
 ```
 
-## Paginas
+Stack: Next.js App Router, React, TypeScript, Tailwind e Lucide. A tipografia é servida localmente pelo next/font após o build.
 
-- `/` - landing page oficial do Vivet.
-- `/links` - pagina de links para bio.
+O lockfile inclui as correções compatíveis do Next.js 15. O override de PostCSS 8.5.23 mantém a dependência interna do Next na versão corrigida sem exigir uma migração de major; revisar esse override ao atualizar o framework.
 
-## Orbitamos
+## Editar conteúdo e fotos
 
-A Orbitamos aparece como o laboratorio de solucoes digitais do Vivet: o espaco onde ideias viram sites, sistemas, automacoes e experiencias digitais para artistas, marcas, pequenos negocios e projetos independentes.
+Links, nomes e textos dos cards estão em `src/data/profile.ts`. A página principal está em `src/app/page.tsx`; a página de bio, em `src/app/links/page.tsx`. A direção visual e os breakpoints ficam em `src/app/globals.css`.
 
-Site oficial:
+As imagens estão em `public/images/` e são servidas localmente:
 
-```txt
-https://orbitamos.vercel.app/
-```
+| Arquivo             | Uso         | Como substituir                                                       |
+| ------------------- | ----------- | --------------------------------------------------------------------- |
+| hero-sao-paulo.webp | Abertura    | Foto horizontal, com assunto à direita e espaço à esquerda para texto |
+| vivet-portrait.jpg  | Sobre e bio | Retrato vertical; atualizar o texto alternativo se a foto mudar       |
+| card-vlog.webp      | Vídeos      | Foto vertical, câmera ou bastidores                                   |
+| card-music.webp     | Música      | Foto vertical, estúdio ou performance                                 |
+| card-code.webp      | Código      | Foto vertical, projetos ou processo                                   |
+| card-spotify.webp   | Spotify     | Foto vertical, universo musical                                       |
 
-## Objetivo comercial
+O hero é uma imagem ilustrativa gerada por IA, com uma pessoa anônima; não é um retrato do artista. Os quatro cards usam fotografias ilustrativas provisórias. O Sobre e a bio usam o retrato público de Vivet. Substituir os arquivos pelos mesmos nomes mantém o layout; prefira WebP comprimido e confira o enquadramento em desktop e celular.
 
-O site foi pensado para abrir portas em varias frentes:
+Fontes e proveniência: `docs/content-sources.md`, `docs/asset-provenance.md` e `docs/card-image-sources.md`.
 
-- fortalecer a presenca artistica;
-- vender servicos digitais;
-- apresentar autoridade em tecnologia;
-- conectar seguidores a musicas e conteudos;
-- criar uma ponte profissional com recrutadores, clientes e parceiros;
-- posicionar o Vivet como artista, estudante, instrutor e empreendedor em evolucao.
+## Publicação
+
+O projeto mantém a estrutura padrão do Next.js e pode seguir o deploy já conectado ao repositório. Nenhum serviço de hospedagem novo é necessário. O commit no GitHub e o deploy do provedor são etapas distintas.

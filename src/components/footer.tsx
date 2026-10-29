@@ -1,14 +1,23 @@
-import { profile } from "@/data/profile";
-
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { Monogram } from "@/components/identity";
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 px-4 py-10 md:px-6">
-      <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/56 md:flex-row md:items-center md:justify-between">
-        <p className="font-black uppercase tracking-[0.14em] text-white">
-          VIVET SP <span className="text-electric">Arte, Código e Corre.</span>
-        </p>
-        <p>{profile.location}</p>
-      </div>
+    <footer className="site-footer container">
+      <Link href="/#inicio" className="footer-brand">
+        <Monogram />
+        <span>
+          VIVET<small>ARTE, CÓDIGO E CORRE.</small>
+        </span>
+      </Link>
+      <p>
+        Feito em São Paulo. Com identidade.
+        <br />
+        <span>© {new Date().getFullYear()} Vivet.</span>
+      </p>
+      <Link className="text-link" href="/links">
+        Todos os links <ArrowUpRight size={15} />
+      </Link>
     </footer>
   );
 }
