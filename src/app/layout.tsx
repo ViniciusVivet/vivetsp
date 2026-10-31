@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     siteName: "VIVET SP",
     images: [
       {
-        url: "/images/hero-sao-paulo.webp",
-        width: 1672,
-        height: 941,
+        url: "/images/vivet-home.webp",
+        width: 1800,
+        height: 2400,
         alt: "Vivet — Arte, código e vida real em São Paulo",
       },
     ],

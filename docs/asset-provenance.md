@@ -1,12 +1,15 @@
-# Visual assets
+# Fotografias de Vivet
 
-## `public/images/hero-sao-paulo.webp`
+Atualizado em 30 de outubro de 2026 com as três fotografias enviadas pelo proprietário do site nesta conversa.
 
-- Created on 2026-10-29 with the built-in ImageGen tool.
-- Illustrative, AI-generated temporary hero photograph. The person is anonymous and is not intended to represent a real portrait of Vivet.
-- Replace this asset with the owner's photography when available. Keep the focal subject around the right-hand third for desktop copy placement.
-- Original PNG retained outside the repository in the generator's default output directory. The website asset is compressed as WebP at quality 86.
+| Arquivo no site                   | Foto enviada                                          | Uso                                                             |
+| --------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
+| `public/images/vivet-home.webp`   | Foto 3 — roupa cinza, de pé na passarela à noite      | Abertura, fundo da página de links e imagem de compartilhamento |
+| `public/images/vivet-sobre.webp`  | Foto 1 — casaco branco, agachado na cidade            | Sobre e avatar da página de links                               |
+| `public/images/vivet-codigo.webp` | Foto 2 — camisa preta, óculos e notebook na Orbitamos | Card Código                                                     |
 
-### Generation prompt
+As fotos foram apenas orientadas, redimensionadas e comprimidas em WebP, preservando a proporção e as cores originais. Nenhum elemento ou traço do retratado foi gerado ou alterado. O enquadramento é feito no CSS: a foto principal ocupa a direita no desktop e uma área acima do texto no celular; o card Código mantém o rosto acima de sua legenda.
 
-Use case: photorealistic-natural. Asset type: cinematic photograph for full-width personal artist website hero, 16:9 landscape. Create a high quality moody nighttime São Paulo city photograph. A young anonymous Brazilian male rapper/creative stands on an urban rooftop, turned away from camera in a black hoodie and backwards black cap, facing the city; his face is not identifiable. Place him center-right, visible from upper torso up, with organic believable silhouette and subtle warm rim lighting on shoulder and cap. Background: layered São Paulo skyline and the recognizable cable-stayed Octávio Frias de Oliveira bridge lit in muted amber, distant apartment window lights and subtle long-exposure road light trails. Photojournalistic fashion editorial, realistic grain and fine detail, subdued black and dark olive shadows, warm gold city highlights, cinematic 35mm photography. Composition: panoramic wide frame, left 45 percent intentionally open and darker with skyline details very restrained so large live HTML typography can overlay it. Deep charcoal cloudy evening sky, not colorful. Bottom fades naturally into shadow. No UI, no text, no lettering, no watermarks, no logos, no neon circle, no extra people. This is an illustrative temporary scene, not a portrait of any real specific person.
+A foto principal tem 1800 × 2400 pixels; as outras duas têm 960 × 1280 pixels. Os originais enviados não foram alterados.
+
+A abertura anterior gerada por IA, o retrato anterior do Spotify e a foto ilustrativa do card Código foram substituídos e removidos dos assets publicados. O histórico dessas versões permanece no Git. As fotos provisórias dos demais cards estão documentadas em `card-image-sources.md`.

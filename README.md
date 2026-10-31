@@ -37,16 +37,16 @@ Links, nomes e textos dos cards estão em `src/data/profile.ts`. A página princ
 
 As imagens estão em `public/images/` e são servidas localmente:
 
-| Arquivo             | Uso         | Como substituir                                                       |
-| ------------------- | ----------- | --------------------------------------------------------------------- |
-| hero-sao-paulo.webp | Abertura    | Foto horizontal, com assunto à direita e espaço à esquerda para texto |
-| vivet-portrait.jpg  | Sobre e bio | Retrato vertical; atualizar o texto alternativo se a foto mudar       |
-| card-vlog.webp      | Vídeos      | Foto vertical, câmera ou bastidores                                   |
-| card-music.webp     | Música      | Foto vertical, estúdio ou performance                                 |
-| card-code.webp      | Código      | Foto vertical, projetos ou processo                                   |
-| card-spotify.webp   | Spotify     | Foto vertical, universo musical                                       |
+| Arquivo           | Uso         | Como substituir                                                            |
+| ----------------- | ----------- | -------------------------------------------------------------------------- |
+| vivet-home.webp   | Abertura    | Foto vertical; composição à direita no desktop e acima do texto no celular |
+| vivet-sobre.webp  | Sobre e bio | Retrato vertical; atualizar o texto alternativo se a foto mudar            |
+| card-vlog.webp    | Vídeos      | Foto vertical, câmera ou bastidores                                        |
+| card-music.webp   | Música      | Foto vertical, estúdio ou performance                                      |
+| vivet-codigo.webp | Código      | Foto vertical, projetos ou processo                                        |
+| card-spotify.webp | Spotify     | Foto vertical, universo musical                                            |
 
-O hero é uma imagem ilustrativa gerada por IA, com uma pessoa anônima; não é um retrato do artista. Os quatro cards usam fotografias ilustrativas provisórias. O Sobre e a bio usam o retrato público de Vivet. Substituir os arquivos pelos mesmos nomes mantém o layout; prefira WebP comprimido e confira o enquadramento em desktop e celular.
+A abertura, o Sobre, a bio e o card Código usam as fotos originais enviadas pelo Vivet. Os cards Vídeos, Música e Spotify ainda usam fotografias ilustrativas provisórias. Substituir os arquivos pelos mesmos nomes mantém o layout; prefira WebP comprimido e confira o enquadramento em desktop e celular.
 
 Fontes e proveniência: `docs/content-sources.md`, `docs/asset-provenance.md` e `docs/card-image-sources.md`.
 

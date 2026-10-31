@@ -18,14 +18,16 @@ export default function Home() {
       <Header />
       <main id="main-content">
         <section id="inicio" className="hero" aria-labelledby="hero-title">
-          <Image
-            className="hero-image"
-            src="/images/hero-sao-paulo.webp"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-          />
+          <div className="hero-media">
+            <Image
+              className="hero-image"
+              src="/images/vivet-home.webp"
+              alt="Vivet de pé em uma passarela à noite, com roupa cinza e óculos escuros"
+              fill
+              priority
+              sizes="(max-width: 600px) 100vw, 68vw"
+            />
+          </div>
           <div className="hero-shade" />
           <div className="hero-inner container">
             <div className="hero-copy">
@@ -90,12 +92,20 @@ export default function Home() {
                   " (abre em nova aba)"
                 }
               >
-                <Image
-                  src={channel.image}
-                  alt=""
-                  fill
-                  sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 25vw"
-                />
+                <div
+                  className={
+                    channel.id === "codigo"
+                      ? "card-image card-image-code"
+                      : "card-image"
+                  }
+                >
+                  <Image
+                    src={channel.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 360px) 90vw, (max-width: 900px) 45vw, 25vw"
+                  />
+                </div>
                 <span className="card-shade" />
                 <span className="card-index">
                   0{index + 1} <ArrowUpRight size={16} />
@@ -130,8 +140,8 @@ export default function Home() {
           <div className="portrait-wrap">
             <div className="portrait-frame">
               <Image
-                src="/images/vivet-portrait.jpg"
-                alt="Vivet em uma passarela de São Paulo à noite, usando jaqueta jeans e óculos escuros"
+                src="/images/vivet-sobre.webp"
+                alt="Vivet agachado na cidade à noite, com casaco branco de capuz e luvas estampadas"
                 fill
                 sizes="(max-width: 700px) 85vw, 400px"
               />

@@ -28,7 +28,7 @@ Não foi possível confirmar um canal separado de vlogs. O link principal do You
 
 ## Imagem
 
-- `public/images/vivet-portrait.jpg`: retrato público do artista associado a Vivet no catálogo da Sensimilla, proveniente do [CDN do Spotify](https://i.scdn.co/image/ab6761610000e5eba21a7013540e57aca7c4fd5b). Arquivo original de 532 × 640 pixels, sem edição. Pode ser substituído pelas fotos que o proprietário enviar.
+- Desde 30/10/2026, o site usa as fotos enviadas diretamente por Vivet na abertura, no Sobre, na bio e no card Código. Consulte `asset-provenance.md`. O retrato anterior do CDN do Spotify foi removido dos assets publicados.
 
 ## Escolhas editoriais
 

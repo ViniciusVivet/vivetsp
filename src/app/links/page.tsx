@@ -15,7 +15,7 @@ export default function LinksPage() {
   return (
     <main id="main-content" className="links-page">
       <Image
-        src="/images/hero-sao-paulo.webp"
+        src="/images/vivet-home.webp"
         className="links-backdrop"
         fill
         sizes="100vw"
@@ -27,13 +27,15 @@ export default function LinksPage() {
           <ArrowLeft size={16} /> Conheça o site
         </Link>
         <header className="links-profile">
-          <Image
-            src="/images/vivet-portrait.jpg"
-            width={90}
-            height={90}
-            alt="Retrato de Vivet"
-            priority
-          />
+          <div className="links-avatar">
+            <Image
+              src="/images/vivet-sobre.webp"
+              fill
+              sizes="90px"
+              alt="Vivet usando casaco branco com capuz"
+              priority
+            />
+          </div>
           <h1>
             VIVET<span>SP</span>
           </h1>

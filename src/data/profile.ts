@@ -41,7 +41,7 @@ export const channels = [
     description: "Projetos, experimentos e ideias que saem do papel.",
     destination: "Ver meu GitHub",
     href: profile.links.github,
-    image: "/images/card-code.webp",
+    image: "/images/vivet-codigo.webp",
     icon: "code",
     color: "blue",
   },
