@@ -4,7 +4,7 @@ Página pessoal de Douglas Vinicius (Vivet), rapper, criador e desenvolvedor da 
 
 ## Experiência
 
-- **Início:** uma abertura fotográfica e quatro cards inteiramente clicáveis para vídeos, BET777, GitHub e o catálogo no Spotify. O destino aparece no próprio card.
+- **Início:** abertura fotográfica e quatro cards clicáveis para Casa Bomba, Vivet TV, Orbitamos e o catálogo no Spotify. Uma chamada abaixo dos cards destaca os projetos no GitHub.
 - **Sobre:** biografia curta, retrato real do artista e conexão com a Orbitamos.
 - **Contato:** e-mail, botão para copiar o endereço, Instagram e Orbitamos.
 - **/links:** página compacta para a bio, com os mesmos destinos verificados e sem duplicações.
@@ -37,16 +37,16 @@ Links, nomes e textos dos cards estão em `src/data/profile.ts`. A página princ
 
 As imagens estão em `public/images/` e são servidas localmente:
 
-| Arquivo           | Uso         | Como substituir                                                            |
-| ----------------- | ----------- | -------------------------------------------------------------------------- |
-| vivet-home.webp   | Abertura    | Foto vertical; composição à direita no desktop e acima do texto no celular |
-| vivet-sobre.webp  | Sobre e bio | Retrato vertical; atualizar o texto alternativo se a foto mudar            |
-| card-vlog.webp    | Vídeos      | Foto vertical, câmera ou bastidores                                        |
-| card-music.webp   | Música      | Foto vertical, estúdio ou performance                                      |
-| vivet-codigo.webp | Código      | Foto vertical, projetos ou processo                                        |
-| card-spotify.webp | Spotify     | Foto vertical, universo musical                                            |
+| Arquivo            | Uso         | Como substituir                                                            |
+| ------------------ | ----------- | -------------------------------------------------------------------------- |
+| vivet-home.webp    | Abertura    | Foto vertical; composição à direita no desktop e acima do texto no celular |
+| vivet-sobre.webp   | Sobre e bio | Retrato vertical; atualizar o texto alternativo se a foto mudar            |
+| vivet-tv.webp      | Vivet TV    | Miniatura real do canal, exibida inteira                                   |
+| casa-bomba.webp    | Lançamento  | Capa oficial quadrada, exibida inteira                                     |
+| vivet-codigo.webp  | Orbitamos   | Foto vertical, projetos ou processo                                        |
+| vivet-spotify.webp | Spotify     | Retrato oficial do artista                                                 |
 
-A abertura, o Sobre, a bio e o card Código usam as fotos originais enviadas pelo Vivet. Os cards Vídeos, Música e Spotify ainda usam fotografias ilustrativas provisórias. Substituir os arquivos pelos mesmos nomes mantém o layout; prefira WebP comprimido e confira o enquadramento em desktop e celular.
+A abertura, o Sobre, a bio e a Orbitamos usam fotos enviadas pelo Vivet. Lançamento e Spotify usam imagens oficiais obtidas pelo oEmbed do Spotify. O card Vivet TV aponta para o canal de vlogs, separado do canal musical nas redes. Prefira WebP comprimido e confira os enquadramentos em desktop e celular.
 
 Fontes e proveniência: `docs/content-sources.md`, `docs/asset-provenance.md` e `docs/card-image-sources.md`.
 

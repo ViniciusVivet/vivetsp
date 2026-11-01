@@ -2,6 +2,7 @@ import {
   AudioLines,
   Code2,
   Github,
+  Globe,
   Instagram,
   Linkedin,
   Video,
@@ -50,7 +51,14 @@ export function SpotifyIcon({ size = 22 }: { size?: number }) {
 }
 export function ChannelIcon({ name }: { name: string }) {
   if (name === "spotify") return <SpotifyIcon size={25} />;
-  const Icon = name === "video" ? Video : name === "music" ? AudioLines : Code2;
+  const Icon =
+    name === "video"
+      ? Video
+      : name === "music"
+        ? AudioLines
+        : name === "globe"
+          ? Globe
+          : Code2;
   return <Icon size={25} strokeWidth={1.5} aria-hidden="true" />;
 }
 export function SocialLinks() {

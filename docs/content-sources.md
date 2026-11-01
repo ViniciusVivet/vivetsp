@@ -1,6 +1,6 @@
 # Fontes de conteúdo
 
-Conferência realizada em 29 de outubro de 2026. Estes registros documentam as fontes usadas no redesign; não são conteúdo exibido na página.
+Conferência atualizada em 1 de novembro de 2026. Estes registros documentam as fontes usadas no redesign; não são conteúdo exibido na página.
 
 ## Identidade e contato
 
@@ -16,9 +16,10 @@ O [site da Sensimilla Records](https://sensimilla-records-web.vercel.app/) assoc
 - [YouTube @vivetsp](https://www.youtube.com/@vivetsp)
 - [Vivet no Spotify](https://open.spotify.com/artist/50WZ6G4s8NCo5g2YKVgTQX): identidade também confirmada pelo título retornado pelo endpoint público oEmbed do Spotify.
 - [BET777 — COGU e Vivet](https://open.spotify.com/track/0NCbITn7TnyuCCmXthgUyz): lançamento identificado como single de 2025 no catálogo da Sensimilla.
-- [Casa Bomba — Vivet e Bright](https://open.spotify.com/track/2DLQxWlg6aILhyjWegjccy): lançamento identificado como single de 2024 no mesmo catálogo.
+- [Casa Bomba — Vivet, COGU e Bright MOOB](https://open.spotify.com/track/3b0AO4N34CQOdX0aciHQDc): versão exibida atualmente no perfil oficial do artista e no bloco Último lançamento do Spotify. A URL antiga do catálogo do selo foi substituída pelo destino atual. Título e capa também confirmados pelo oEmbed público do Spotify; não reproduzir a data antiga do selo.
+- [Vivet TV — @VivetTv](https://www.youtube.com/@VivetTv): canal de vlogs confirmado diretamente no YouTube, com apresentação sobre hip-hop e empresas e o vídeo “Pausei minha carreira musical para focar na faculdade”. O canal musical @vivetsp continua acessível nas redes sociais.
 
-Não foi possível confirmar um canal separado de vlogs. O link principal do YouTube deve ser apresentado como **Vídeos**, sem sugerir um segundo canal. Não há confirmação de que BET777 seja o lançamento mais recente; usar apenas o nome da faixa.
+O card de vlogs aponta para @VivetTv. O destaque musical é Casa Bomba, conforme pedido do artista e seção de último lançamento do Spotify.
 
 ## Projetos
 
@@ -28,10 +29,10 @@ Não foi possível confirmar um canal separado de vlogs. O link principal do You
 
 ## Imagem
 
-- Desde 30/10/2026, o site usa as fotos enviadas diretamente por Vivet na abertura, no Sobre, na bio e no card Código. Consulte `asset-provenance.md`. O retrato anterior do CDN do Spotify foi removido dos assets publicados.
+- O site usa fotos enviadas diretamente por Vivet na abertura, no Sobre, na bio e no card Orbitamos. A capa de Casa Bomba e o retrato do card Spotify vêm dos endpoints públicos oEmbed correspondentes. Consulte `asset-provenance.md` e `card-image-sources.md`.
 
 ## Escolhas editoriais
 
 - Priorizar a origem **Zona Leste, São Paulo**, declarada pelo próprio projeto. A biografia no selo menciona o centro da cidade, sem resolver essa diferença.
 - Não reproduzir contagens de seguidores, plays, ouvintes ou alunos sem uma fonte atual.
-- Resumir a apresentação em música, vídeos, código e uma biografia curta, evitando repetir o mesmo texto em várias seções.
+- Quatro destinos principais: lançamento, vlogs, Orbitamos e catálogo Spotify. GitHub ganha uma chamada própria abaixo dos cards, além do acesso nas redes e na página de links.

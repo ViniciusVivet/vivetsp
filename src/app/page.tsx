@@ -5,6 +5,7 @@ import {
   ArrowUpRight,
   MoveUpRight,
   Sparkles,
+  Github,
 } from "lucide-react";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -78,42 +79,39 @@ export default function Home() {
             </p>
           </div>
           <div className="channel-grid">
-            {channels.map((channel, index) => (
+            {channels.map((channel) => (
               <a
                 key={channel.id}
                 href={channel.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={"channel-card " + channel.color}
+                className={`channel-card ${channel.color} card-${channel.id}`}
                 aria-label={
+                  channel.label +
+                  ": " +
                   channel.title +
                   ": " +
                   channel.destination +
                   " (abre em nova aba)"
                 }
               >
-                <div
-                  className={
-                    channel.id === "codigo"
-                      ? "card-image card-image-code"
-                      : "card-image"
-                  }
-                >
+                <div className="card-image">
                   <Image
                     src={channel.image}
-                    alt=""
+                    alt={
+                      channel.id === "lancamento"
+                        ? "Capa oficial do single Casa Bomba"
+                        : ""
+                    }
                     fill
                     sizes="(max-width: 360px) 90vw, (max-width: 900px) 45vw, 25vw"
                   />
                 </div>
                 <span className="card-shade" />
                 <span className="card-index">
-                  0{index + 1} <ArrowUpRight size={16} />
+                  <ChannelIcon name={channel.icon} /> {channel.label}
                 </span>
                 <div className="card-copy">
-                  <span className="channel-icon">
-                    <ChannelIcon name={channel.icon} />
-                  </span>
                   <h3>{channel.title}</h3>
                   <p>{channel.description}</p>
                   <span className="card-destination">
@@ -126,6 +124,22 @@ export default function Home() {
               </a>
             ))}
           </div>
+          <a
+            className="github-callout"
+            href={profile.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Curte o lado dev? Explorar meu GitHub (abre em nova aba)"
+          >
+            <Github size={24} aria-hidden="true" />
+            <span>
+              <strong>Curte o lado dev?</strong>
+              <span>Projetos, estudos e o código por trás das ideias.</span>
+            </span>
+            <span className="github-destination">
+              Explorar meu GitHub <ArrowUpRight size={18} aria-hidden="true" />
+            </span>
+          </a>
           <div className="social-divider">
             <span />
             <SocialLinks />
@@ -177,8 +191,9 @@ export default function Home() {
               >
                 Orbitamos
               </a>
-              , onde ideias viram sites e experiências digitais. Aqui, tudo se
-              conecta.
+              , meu trabalho com criação de sites e experiências digitais. É
+              onde ajudo outras pessoas a colocar suas ideias no mundo — com a
+              mesma identidade que levo para a música.
             </p>
             <div className="about-signature">
               <span>Vivet.</span>

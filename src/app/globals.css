@@ -327,7 +327,7 @@ a {
 .channel-card {
   --accent: var(--gold);
   position: relative;
-  height: 382px;
+  height: 450px;
   border: 1px solid #d4b58135;
   border-radius: 7px;
   overflow: hidden;
@@ -352,7 +352,7 @@ a {
   position: absolute;
   inset: 0;
 }
-.card-image-code {
+.card-orbitamos .card-image {
   bottom: auto;
   height: 70%;
   mask-image: linear-gradient(#000 75%, transparent);
@@ -372,7 +372,7 @@ a {
   transform: scale(1.045);
   filter: saturate(0.9) brightness(0.95);
 }
-.channel-card .card-image-code img {
+.card-orbitamos .card-image img {
   object-position: 60% 45%;
   filter: none;
 }
@@ -394,10 +394,115 @@ a {
   right: 19px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 9px;
-  letter-spacing: 0.17em;
-  color: #fff9;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #f2eee3;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 7px 9px;
+  border-radius: 4px;
+  background: #0b0d0ce6;
+}
+.card-index svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+.card-lancamento {
+  background: linear-gradient(155deg, #452417, #14100e 65%);
+  border-color: #b67c4e66;
+}
+.card-lancamento .card-image {
+  inset: 62px 22px 180px;
+}
+.card-lancamento .card-image img {
+  object-fit: contain;
+  filter: none;
+  border-radius: 3px;
+}
+.card-lancamento .card-shade {
+  display: none;
+}
+.card-lancamento:hover .card-image img {
+  filter: none;
+  transform: scale(1.025);
+}
+.card-lancamento .card-index {
+  color: #ffd2a2;
+  background: none;
+  padding: 0;
+  top: 23px;
+  left: 22px;
+}
+.card-videos {
+  background: linear-gradient(150deg, #2b2924, #0c100e 75%);
+}
+.card-videos .card-image {
+  inset: 58px 0 180px;
+}
+.card-videos .card-image img {
+  object-fit: contain;
+  filter: none;
+}
+.card-videos .card-shade {
+  display: none;
+}
+.card-spotify {
+  background: #0e211b;
+}
+.card-spotify .card-image {
+  height: 72%;
+  bottom: auto;
+}
+.card-spotify .card-image img {
+  object-position: center 26%;
+  filter: none;
+}
+.card-spotify .card-shade {
+  background: linear-gradient(180deg, #08161100 25%, #0e211b 76%);
+}
+.github-callout {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 24px;
+  margin-top: 16px;
+  border: 1px solid #a8c5ce35;
+  border-radius: 6px;
+  background: #111716;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.github-callout:hover {
+  border-color: #a8c5ce;
+  background: #17201e;
+}
+.github-callout > svg {
+  color: #a8c5ce;
+  flex-shrink: 0;
+}
+.github-callout > span:not(.github-destination) {
+  display: grid;
+  gap: 5px;
+}
+.github-callout strong {
+  font-weight: 500;
+  font-size: 14px;
+}
+.github-callout > span > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.github-destination {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #bbd7df;
+  font-size: 12px;
 }
 .card-copy {
   position: absolute;
@@ -943,7 +1048,7 @@ a {
     gap: 18px;
   }
   .channel-card {
-    height: 370px;
+    height: 480px;
   }
   .card-copy {
     left: 24px;
@@ -1104,7 +1209,7 @@ a {
     gap: 12px;
   }
   .channel-card {
-    height: 330px;
+    height: 360px;
     border-radius: 5px;
   }
   .card-index {
@@ -1112,6 +1217,44 @@ a {
     left: 14px;
     right: 14px;
     font-size: 8px;
+    letter-spacing: 0;
+    gap: 5px;
+    padding: 5px;
+  }
+  .card-index svg {
+    width: 14px;
+    height: 14px;
+  }
+  .card-lancamento .card-image {
+    inset: 52px 14px 190px;
+  }
+  .card-videos .card-image {
+    inset: 52px 0 190px;
+  }
+  .card-lancamento .card-index {
+    top: 19px;
+    left: 14px;
+  }
+  .card-copy h3 {
+    overflow-wrap: normal;
+  }
+  .github-callout {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    padding: 20px 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .github-callout > span:not(.github-destination) {
+    flex: 1;
+  }
+  .github-callout > span > span {
+    line-height: 1.6;
+  }
+  .github-destination {
+    grid-column: 2;
+    margin-left: 0;
+    min-height: 32px;
   }
   .card-copy {
     left: 14px;
@@ -1263,7 +1406,11 @@ a {
     grid-template-columns: 1fr;
   }
   .channel-card {
-    height: 340px;
+    height: 440px;
+  }
+  .card-lancamento .card-image {
+    max-width: 230px;
+    margin-inline: auto;
   }
   .card-copy p {
     font-size: 12px;

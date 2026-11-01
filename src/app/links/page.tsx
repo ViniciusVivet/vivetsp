@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Globe, Mail } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Github, Mail } from "lucide-react";
 import { ChannelIcon, SocialLinks } from "@/components/identity";
 import { channels, profile } from "@/data/profile";
 
@@ -56,27 +56,31 @@ export default function LinksPage() {
               </span>
               <span>
                 <strong>
-                  {channel.title === "Música"
-                    ? "BET777 — COGU & Vivet"
-                    : channel.title}
+                  {channel.id === "lancamento"
+                    ? "Casa Bomba — lançamento"
+                    : channel.id === "spotify"
+                      ? "Vivet no Spotify"
+                      : channel.title}
                 </strong>
                 <small>{channel.destination}</small>
               </span>
+              <span className="sr-only"> (abre em nova aba)</span>
               <ArrowUpRight size={19} />
             </a>
           ))}
           <a
             className="bio-link"
-            href={profile.links.orbitamos}
+            href={profile.links.github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Meu GitHub — projetos, estudos e código (abre em nova aba)"
           >
             <span className="bio-icon">
-              <Globe size={24} />
+              <Github size={24} />
             </span>
             <span>
-              <strong>Orbitamos</strong>
-              <small>Vamos construir seu projeto</small>
+              <strong>Meu GitHub</strong>
+              <small>Projetos, estudos e código</small>
             </span>
             <ArrowUpRight size={19} />
           </a>
