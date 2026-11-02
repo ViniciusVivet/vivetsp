@@ -1,15 +1,17 @@
 # VIVET SP — Arte, código & vida real
 
-Página pessoal de Douglas Vinicius (Vivet), rapper, criador e desenvolvedor da Zona Leste de São Paulo.
+Página pessoal de Vinícius (Vivet), rapper, criador e desenvolvedor da Zona Leste de São Paulo.
 
 ## Experiência
 
 - **Início:** abertura fotográfica e quatro cards clicáveis para Casa Bomba, Vivet TV, Orbitamos e o catálogo no Spotify. Uma chamada abaixo dos cards destaca os projetos no GitHub.
-- **Sobre:** biografia curta, retrato real do artista e conexão com a Orbitamos.
+- **Sobre:** biografia curta, galeria de fotos com progresso e controles e conexão com a Orbitamos.
 - **Contato:** e-mail, botão para copiar o endereço, Instagram e Orbitamos.
 - **/links:** página compacta para a bio, com os mesmos destinos verificados e sem duplicações.
 
 A navegação permanece visível no celular. O site oferece foco de teclado, link para pular ao conteúdo, estados de navegação e suporte a movimento reduzido. Não há formulário sem integração ou número fictício de WhatsApp.
+
+Os cards flutuam suavemente e a faixa fina percorre os universos do artista. A galeria pausa com mouse sobre a foto ou toque segurado; um clique abre a foto ampliada com navegação. O Vivet TV oferece reprodução sob demanda em diálogo; o Spotify mantém links diretos. A galeria usa fotos já fornecidas e aceita novas entradas em `src/components/portrait-gallery.tsx`. Decisões e prompt da arte do GitHub: `docs/motion-and-content.md`.
 
 ## Desenvolvimento
 

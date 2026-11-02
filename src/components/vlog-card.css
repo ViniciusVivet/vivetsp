@@ -1,0 +1,141 @@
+.vlog-card .vlog-preview {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  color: var(--paper);
+}
+.vlog-card .vlog-preview:focus-visible {
+  outline-offset: -4px;
+  outline-width: 3px;
+}
+.vlog-play-label {
+  position: absolute;
+  z-index: 1;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 15px;
+  border: 1px solid #f1eee560;
+  border-radius: 999px;
+  background: #0b0d0ce8;
+  font-size: 11px;
+  white-space: nowrap;
+  box-shadow: 0 3px 18px #0006;
+  transition:
+    background 160ms,
+    color 160ms;
+}
+.vlog-preview:hover .vlog-play-label,
+.vlog-preview:focus-visible .vlog-play-label {
+  color: #101410;
+  background: var(--gold);
+}
+.vlog-card .vlog-channel-link {
+  min-height: 44px;
+  margin-top: 8px;
+}
+.vlog-dialog {
+  width: min(940px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 22px;
+  border: 1px solid #d4b58160;
+  border-radius: 14px;
+  background: #111612;
+  color: var(--paper);
+  box-shadow: 0 24px 100px #000b;
+}
+.vlog-dialog::backdrop {
+  background: #020403d9;
+  backdrop-filter: blur(8px);
+}
+.vlog-dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.vlog-dialog-heading span {
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+.vlog-dialog-heading h2 {
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 500;
+  margin-top: 6px;
+}
+.vlog-close {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff40;
+  border-radius: 50%;
+  color: var(--paper);
+  background: #ffffff08;
+  cursor: pointer;
+}
+.vlog-close:hover {
+  background: #ffffff20;
+}
+.vlog-player {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  border: 0;
+  border-radius: 5px;
+  background: #000;
+}
+.vlog-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.vlog-dialog-footer p {
+  color: var(--muted);
+}
+.vlog-dialog-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 8px;
+  color: var(--gold);
+}
+@media (max-width: 600px) {
+  .vlog-card .vlog-channel-link {
+    margin-top: 0;
+  }
+  .vlog-play-label {
+    min-height: 44px;
+    bottom: 0;
+    gap: 5px;
+    padding-inline: 11px;
+    font-size: 10px;
+  }
+  .vlog-dialog {
+    padding: 14px;
+  }
+  .vlog-dialog-heading {
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .vlog-dialog-footer {
+    gap: 0;
+  }
+}

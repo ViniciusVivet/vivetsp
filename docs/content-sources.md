@@ -1,10 +1,10 @@
 # Fontes de conteúdo
 
-Conferência atualizada em 1 de novembro de 2026. Estes registros documentam as fontes usadas no redesign; não são conteúdo exibido na página.
+Conferência atualizada em 2 de novembro de 2026. Estes registros documentam as fontes usadas no redesign; não são conteúdo exibido na página.
 
 ## Identidade e contato
 
-- [Perfil no GitHub](https://github.com/ViniciusVivet): Douglas Vinicius Alves da Silva, também apresentado como Douglas Vinicius (Vivet). Instrutor de informática e estudante de Análise e Desenvolvimento de Sistemas; projetos de desenvolvimento e ensino.
+- Nome público autorizado: **Vinícius / Vivet**. O [perfil no GitHub](https://github.com/ViniciusVivet) documenta projetos de desenvolvimento e ensino; a bio trata ensino como experiência, sem afirmar vínculo profissional atual.
 - [README do perfil](https://github.com/ViniciusVivet/ViniciusVivet/blob/main/README.md): publica `douglasvivet@gmail.com`, o [LinkedIn](https://www.linkedin.com/in/vivetsp) e os projetos KitCerto, YUME Atelier e Orbitamos.
 - [Conteúdo anterior deste projeto](https://github.com/ViniciusVivet/vivetsp): identidade artística VIVET SP; rap, criação de conteúdo, tecnologia e origem na Zona Leste de São Paulo. A página anterior apontava para homepages genéricas de redes sociais e um número fictício de WhatsApp; esses destinos não devem ser reutilizados.
 
@@ -25,7 +25,7 @@ O card de vlogs aponta para @VivetTv. O destaque musical é Casa Bomba, conforme
 
 - [GitHub de Vivet](https://github.com/ViniciusVivet)
 - [Portfólio de desenvolvimento](https://viniciusvivet.github.io/portfolio-pessoal-dev/): homepage declarada no repositório `portfolio-pessoal-dev`.
-- [Orbitamos](https://orbitamos.vercel.app/): destino já declarado neste projeto e associado ao [repositório Orbitamos](https://github.com/ViniciusVivet/Orbitamos).
+- [Orbitamos](https://www.orbitamosbr.com/): domínio atual confirmado; sites, sistemas e automações. Associado ao [repositório Orbitamos](https://github.com/ViniciusVivet/Orbitamos).
 
 ## Imagem
 

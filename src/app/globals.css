@@ -297,7 +297,8 @@ a {
 }
 .channels-section {
   position: relative;
-  margin-top: -22px;
+  margin-top: 0;
+  padding-top: 36px;
   padding-bottom: 25px;
 }
 .section-topline {
@@ -1435,7 +1436,207 @@ a {
     gap: 21px;
   }
 }
+.motion-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 24px;
+  border-block: 1px solid #d4b58133;
+  background: #171b16;
+  position: relative;
+}
+.ribbon-window {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 4%,
+    #000 96%,
+    transparent
+  );
+}
+.ribbon-track {
+  display: flex;
+  width: max-content;
+  animation: ribbon-travel 36s linear infinite;
+  animation-play-state: paused;
+}
+.ribbon-group {
+  display: flex;
+  flex: none;
+  align-items: center;
+  min-width: calc(100vw - 48px);
+  justify-content: space-around;
+}
+.ribbon-group > span {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  padding-right: 38px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ribbon-star {
+  font-size: 14px;
+  color: var(--gold);
+}
+@keyframes ribbon-travel {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes card-drift {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -5px;
+  }
+}
+.channel-card {
+  animation: card-drift 7s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.card-videos {
+  animation-delay: -1.75s;
+}
+.card-orbitamos {
+  animation-delay: -3.5s;
+}
+.card-spotify {
+  animation-delay: -5.25s;
+}
+.motion-stage[data-animated="true"] .channel-card,
+.motion-stage[data-animated="true"] .ribbon-track {
+  animation-play-state: running;
+}
+.motion-stage .channel-grid:hover .channel-card,
+.motion-stage .channel-grid:focus-within .channel-card {
+  animation-play-state: paused;
+}
+.github-feature {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-height: 320px;
+  padding: 38px 42px;
+  display: block;
+  margin-top: 28px;
+}
+.github-feature .dev-mascot {
+  object-fit: cover;
+  object-position: right center;
+  z-index: -2;
+}
+.github-feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #111716dd 0%,
+    #11171699 38%,
+    transparent 65%
+  );
+}
+.github-feature-copy {
+  max-width: 390px;
+}
+.github-feature-copy .eyebrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #bcd1c5;
+  font-size: 9px;
+}
+.github-feature h3 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 48px;
+  line-height: 0.98;
+  margin-block: 20px 16px;
+}
+.github-feature-copy > p:not(.eyebrow) {
+  max-width: 330px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #bec7c0;
+}
+.github-feature .github-destination {
+  margin: 23px 0 0;
+  font-size: 12px;
+  color: #e7d6b5;
+  min-height: 44px;
+}
+@media (max-width: 600px) {
+  .motion-ribbon {
+    gap: 10px;
+    padding: 4px 14px;
+  }
+  .ribbon-group > span {
+    font-size: 14px;
+    gap: 24px;
+    padding-right: 24px;
+  }
+  .github-feature {
+    display: block;
+    min-height: 530px;
+    padding: 26px 24px;
+  }
+  .github-feature .dev-mascot {
+    object-fit: cover;
+    object-position: 80% top;
+    height: 280px !important;
+    top: auto !important;
+    bottom: 0;
+  }
+  .github-feature::after {
+    background: linear-gradient(
+      180deg,
+      #111716 0%,
+      #111716 40%,
+      #11171633 65%,
+      transparent
+    );
+  }
+  .github-feature h3 {
+    font-size: 42px;
+    margin-block: 15px 12px;
+  }
+  .github-feature-copy > p:not(.eyebrow) {
+    max-width: 310px;
+  }
+  .github-feature .github-destination {
+    margin-top: 12px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
+  .ribbon-window {
+    mask-image: none;
+  }
+  .ribbon-track {
+    width: auto;
+  }
+  .ribbon-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+  }
+  .ribbon-group > span {
+    padding: 0;
+    font-size: 17px;
+  }
+  .ribbon-star,
+  .ribbon-group[aria-hidden="true"] {
+    display: none;
+  }
   html {
     scroll-behavior: auto;
   }

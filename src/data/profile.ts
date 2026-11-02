@@ -1,7 +1,7 @@
 // Verified public destinations. See docs/content-sources.md.
 export const profile = {
   name: "Vivet",
-  fullName: "Douglas Vinicius",
+  fullName: "Vinícius",
   location: "Zona Leste, São Paulo",
   email: "douglasvivet@gmail.com",
   links: {
@@ -11,7 +11,7 @@ export const profile = {
     spotify: "https://open.spotify.com/artist/50WZ6G4s8NCo5g2YKVgTQX",
     github: "https://github.com/ViniciusVivet",
     linkedin: "https://www.linkedin.com/in/vivetsp",
-    orbitamos: "https://orbitamos.vercel.app/",
+    orbitamos: "https://www.orbitamosbr.com/",
     bet777: "https://open.spotify.com/track/0NCbITn7TnyuCCmXthgUyz",
     casaBomba: "https://open.spotify.com/track/3b0AO4N34CQOdX0aciHQDc",
   },
@@ -41,11 +41,11 @@ export const channels = [
   },
   {
     id: "orbitamos",
-    label: "Sites & experiências",
+    label: "Sites & soluções",
     title: "Orbitamos",
     description:
-      "Seu projeto merece um site com identidade. Eu construo com você.",
-    destination: "Quero criar meu site",
+      "Sites, sistemas e automações. Tecnologia para o seu próximo passo.",
+    destination: "Conhecer a Orbitamos",
     href: profile.links.orbitamos,
     image: "/images/vivet-codigo.webp",
     icon: "globe",

@@ -4,18 +4,20 @@ import {
   ArrowRight,
   ArrowUpRight,
   MoveUpRight,
-  Sparkles,
   Github,
 } from "lucide-react";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { ChannelIcon, SocialLinks } from "@/components/identity";
 import { CopyEmail } from "@/components/copy-email";
+import { PortraitGallery } from "@/components/portrait-gallery";
+import { VlogCard } from "@/components/vlog-card";
+import { MotionStage, MotionRibbon } from "@/components/motion-stage";
 import { channels, profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <>
+    <MotionStage>
       <Header />
       <main id="main-content">
         <section id="inicio" className="hero" aria-labelledby="hero-title">
@@ -38,7 +40,7 @@ export default function Home() {
               <h1 id="hero-title" className="hero-wordmark">
                 VIVET<span>SP</span>
               </h1>
-              <p className="hero-name">DOUGLAS VINICIUS</p>
+              <p className="hero-name">VINÍCIUS / VIVET</p>
               <h2>
                 Arte, código <span>& vida real.</span>
               </h2>
@@ -67,6 +69,7 @@ export default function Home() {
             </span>
           </div>
         </section>
+        <MotionRibbon />
         <section
           id="universos"
           className="channels-section container"
@@ -79,66 +82,87 @@ export default function Home() {
             </p>
           </div>
           <div className="channel-grid">
-            {channels.map((channel) => (
-              <a
-                key={channel.id}
-                href={channel.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`channel-card ${channel.color} card-${channel.id}`}
-                aria-label={
-                  channel.label +
-                  ": " +
-                  channel.title +
-                  ": " +
-                  channel.destination +
-                  " (abre em nova aba)"
-                }
-              >
-                <div className="card-image">
-                  <Image
-                    src={channel.image}
-                    alt={
-                      channel.id === "lancamento"
-                        ? "Capa oficial do single Casa Bomba"
-                        : ""
-                    }
-                    fill
-                    sizes="(max-width: 360px) 90vw, (max-width: 900px) 45vw, 25vw"
-                  />
-                </div>
-                <span className="card-shade" />
-                <span className="card-index">
-                  <ChannelIcon name={channel.icon} /> {channel.label}
-                </span>
-                <div className="card-copy">
-                  <h3>{channel.title}</h3>
-                  <p>{channel.description}</p>
-                  <span className="card-destination">
-                    {channel.destination}
-                    <span className="card-arrow">
-                      <ArrowUpRight size={18} />
-                    </span>
+            {channels.map((channel) =>
+              channel.id === "videos" ? (
+                <VlogCard key={channel.id} />
+              ) : (
+                <a
+                  key={channel.id}
+                  href={channel.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`channel-card ${channel.color} card-${channel.id}`}
+                  aria-label={
+                    channel.label +
+                    ": " +
+                    channel.title +
+                    ": " +
+                    channel.destination +
+                    " (abre em nova aba)"
+                  }
+                >
+                  <div className="card-image">
+                    <Image
+                      src={channel.image}
+                      alt={
+                        channel.id === "lancamento"
+                          ? "Capa oficial do single Casa Bomba"
+                          : ""
+                      }
+                      fill
+                      sizes="(max-width: 360px) 90vw, (max-width: 900px) 45vw, 25vw"
+                    />
+                  </div>
+                  <span className="card-shade" />
+                  <span className="card-index">
+                    <ChannelIcon name={channel.icon} /> {channel.label}
                   </span>
-                </div>
-              </a>
-            ))}
+                  <div className="card-copy">
+                    <h3>{channel.title}</h3>
+                    <p>{channel.description}</p>
+                    <span className="card-destination">
+                      {channel.destination}
+                      <span className="card-arrow">
+                        <ArrowUpRight size={18} />
+                      </span>
+                    </span>
+                  </div>
+                </a>
+              ),
+            )}
           </div>
           <a
-            className="github-callout"
+            className="github-callout github-feature"
             href={profile.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Curte o lado dev? Explorar meu GitHub (abre em nova aba)"
+            aria-label="Do rascunho ao código. Ver meus projetos no GitHub (abre em nova aba)"
           >
-            <Github size={24} aria-hidden="true" />
-            <span>
-              <strong>Curte o lado dev?</strong>
-              <span>Projetos, estudos e o código por trás das ideias.</span>
-            </span>
-            <span className="github-destination">
-              Explorar meu GitHub <ArrowUpRight size={18} aria-hidden="true" />
-            </span>
+            <Image
+              className="dev-mascot"
+              src="/images/dev-mascot.webp"
+              alt=""
+              fill
+              sizes="(max-width: 600px) 100vw, 1200px"
+            />
+            <div className="github-feature-copy">
+              <p className="eyebrow">
+                <Github size={16} aria-hidden="true" /> CURTE O LADO DEV?
+              </p>
+              <h3>
+                Do rascunho
+                <br />
+                ao código.
+              </h3>
+              <p>
+                Projetos que estou construindo, ideias que estou testando e o
+                que aprendo no caminho.
+              </p>
+              <span className="github-destination">
+                Ver meus projetos no GitHub{" "}
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </span>
+            </div>
           </a>
           <div className="social-divider">
             <span />
@@ -151,20 +175,7 @@ export default function Home() {
           className="about-section container"
           aria-labelledby="about-title"
         >
-          <div className="portrait-wrap">
-            <div className="portrait-frame">
-              <Image
-                src="/images/vivet-sobre.webp"
-                alt="Vivet agachado na cidade à noite, com casaco branco de capuz e luvas estampadas"
-                fill
-                sizes="(max-width: 700px) 85vw, 400px"
-              />
-              <span className="portrait-caption">
-                VIVET / SÃO PAULO <span>SP / BR</span>
-              </span>
-            </div>
-            <span className="portrait-note">feito de vivência.</span>
-          </div>
+          <PortraitGallery />
           <div className="about-copy">
             <p className="eyebrow">01 / SOBRE MIM</p>
             <h2 id="about-title">
@@ -173,17 +184,18 @@ export default function Home() {
               <span>Mais de um universo.</span>
             </h2>
             <p>
-              Salve, eu sou o Douglas. Na música e na vida, Vivet. Sou da Zona
-              Leste de São Paulo e encontro na criação um jeito de transformar o
-              que vivo em algo que fica.
+              Salve, eu sou o Vinícius. Na música, Vivet. Sou da Zona Leste de
+              São Paulo e faço rap, registro os bastidores no Vivet TV e
+              construo projetos com código.
             </p>
             <p>
-              Faço rap, crio conteúdo, estudo tecnologia e ensino informática.
-              Entre um verso e uma linha de código, vou construindo meu próprio
-              caminho.
+              Gosto de entender como as coisas funcionam e de dividir o que
+              aprendo. A experiência em sala de aula também faz parte do meu
+              jeito de criar: tornar a tecnologia mais próxima de quem está
+              começando.
             </p>
             <p>
-              Também criei a{" "}
+              Na{" "}
               <a
                 href={profile.links.orbitamos}
                 target="_blank"
@@ -191,9 +203,9 @@ export default function Home() {
               >
                 Orbitamos
               </a>
-              , meu trabalho com criação de sites e experiências digitais. É
-              onde ajudo outras pessoas a colocar suas ideias no mundo — com a
-              mesma identidade que levo para a música.
+              , essa vontade vira sites, sistemas e automações para quem quer
+              tirar um projeto do papel. Por aqui, compartilho esse caminho: os
+              sons, as ideias em construção e a vida entre um e outro.
             </p>
             <div className="about-signature">
               <span>Vivet.</span>
@@ -205,17 +217,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="manifesto-strip container">
-          <Sparkles size={20} strokeWidth={1} aria-hidden="true" />
-          <p>
-            A criatividade não cabe <em>em uma coisa só.</em>
-          </p>
-          <span>
-            MESMA ENERGIA.
-            <br />
-            NOVOS CAPÍTULOS.
-          </span>
-        </div>
         <section
           id="contato"
           className="contact-section container"
@@ -261,6 +262,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-    </>
+    </MotionStage>
   );
 }
