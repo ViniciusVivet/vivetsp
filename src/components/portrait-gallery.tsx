@@ -22,7 +22,7 @@ const portraits = [
   },
   {
     src: "/images/vivet-codigo.webp",
-    alt: "Vinícius trabalhando no notebook na Orbitamos",
+    alt: "Vinicius trabalhando no notebook na Orbitamos",
     caption: "Ideia aberta. Mão no código.",
     position: "60% 45%",
   },

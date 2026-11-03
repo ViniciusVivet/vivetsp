@@ -4,7 +4,7 @@ Conferência atualizada em 2 de novembro de 2026. Estes registros documentam as 
 
 ## Identidade e contato
 
-- Nome público autorizado: **Vinícius / Vivet**. O [perfil no GitHub](https://github.com/ViniciusVivet) documenta projetos de desenvolvimento e ensino; a bio trata ensino como experiência, sem afirmar vínculo profissional atual.
+- Nome público autorizado: **Vinicius / Vivet**. O [perfil no GitHub](https://github.com/ViniciusVivet) documenta projetos de desenvolvimento e ensino; a bio trata ensino como experiência, sem afirmar vínculo profissional atual.
 - [README do perfil](https://github.com/ViniciusVivet/ViniciusVivet/blob/main/README.md): publica `douglasvivet@gmail.com`, o [LinkedIn](https://www.linkedin.com/in/vivetsp) e os projetos KitCerto, YUME Atelier e Orbitamos.
 - [Conteúdo anterior deste projeto](https://github.com/ViniciusVivet/vivetsp): identidade artística VIVET SP; rap, criação de conteúdo, tecnologia e origem na Zona Leste de São Paulo. A página anterior apontava para homepages genéricas de redes sociais e um número fictício de WhatsApp; esses destinos não devem ser reutilizados.
 

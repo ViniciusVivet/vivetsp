@@ -1,6 +1,6 @@
 # Atualização de apresentação — 02/11/2026
 
-- Nome público: Vinícius / Vivet, conforme orientação explícita do proprietário. O endereço de contato existente foi preservado.
+- Nome público: Vinicius / Vivet, conforme orientação explícita do proprietário. O endereço de contato existente foi preservado.
 - Bio: rap, bastidores no Vivet TV, desenvolvimento e experiência com ensino. Nenhum detalhe privado das conversas consultadas foi incorporado.
 - Orbitamos: domínio público atual https://www.orbitamosbr.com/; oferta confirmada na própria página: sites, sistemas e automações.
 - Cards: flutuação de 5px em ciclos de 7s, defasada; hover e foco interrompem. Faixa fina com ciclo contínuo de 36s, sem controles de pausa conforme pedido. Suspensão em aba oculta e preferência de movimento reduzido respeitada.

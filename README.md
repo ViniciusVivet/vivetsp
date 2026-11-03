@@ -1,6 +1,6 @@
 # VIVET SP — Arte, código & vida real
 
-Página pessoal de Vinícius (Vivet), rapper, criador e desenvolvedor da Zona Leste de São Paulo.
+Página pessoal de Vinicius (Vivet), rapper, criador e desenvolvedor da Zona Leste de São Paulo.
 
 ## Experiência
 

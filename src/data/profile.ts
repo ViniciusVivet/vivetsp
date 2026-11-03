@@ -1,7 +1,7 @@
 // Verified public destinations. See docs/content-sources.md.
 export const profile = {
   name: "Vivet",
-  fullName: "Vinícius",
+  fullName: "Vinicius",
   location: "Zona Leste, São Paulo",
   email: "douglasvivet@gmail.com",
   links: {

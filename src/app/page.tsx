@@ -40,7 +40,7 @@ export default function Home() {
               <h1 id="hero-title" className="hero-wordmark">
                 VIVET<span>SP</span>
               </h1>
-              <p className="hero-name">VINÍCIUS / VIVET</p>
+              <p className="hero-name">VINICIUS / VIVET</p>
               <h2>
                 Arte, código <span>& vida real.</span>
               </h2>
@@ -184,7 +184,7 @@ export default function Home() {
               <span>Mais de um universo.</span>
             </h2>
             <p>
-              Salve, eu sou o Vinícius. Na música, Vivet. Sou da Zona Leste de
+              Salve, eu sou o Vinicius. Na música, Vivet. Sou da Zona Leste de
               São Paulo e faço rap, registro os bastidores no Vivet TV e
               construo projetos com código.
             </p>
