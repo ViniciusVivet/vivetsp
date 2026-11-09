@@ -50,7 +50,7 @@ export default function Home() {
                 Vários jeitos de contar a mesma história.
               </p>
               <a href="#universos" className="hero-cta">
-                Encontre o seu caminho <ArrowDown size={16} />
+                Explorar música, vídeos e projetos <ArrowDown size={16} />
               </a>
             </div>
             <p className="hero-note">
@@ -69,7 +69,6 @@ export default function Home() {
             </span>
           </div>
         </section>
-        <MotionRibbon />
         <section
           id="universos"
           className="channels-section container"
@@ -170,6 +169,7 @@ export default function Home() {
             <span />
           </div>
         </section>
+        <MotionRibbon />
         <section
           id="sobre"
           className="about-section container"

@@ -8,6 +8,12 @@
 - Vídeo: thumbnail local, iframe carregado apenas após clique. Diálogo nativo com Escape, fechamento, retorno de foco e alternativa externa. Spotify continua como destino externo.
 - Referência técnica: https://developers.google.com/youtube/player_parameters — player mínimo 200 × 200, reprodução após escolha do visitante.
 
+## Acesso aos cards — 09/11/2026
+
+A abertura acompanha a altura da tela com limites de tamanho, preservando a foto e a assinatura. No celular, a marca se sobrepõe ao degradê inferior da imagem e os espaços entre textos são menores. A faixa vem após os destinos e o botão inicial explicita música, vídeos e projetos.
+
+Conferência visual em 390 × 844, 320 × 568, 768 × 1024 e 1366 × 768: sem rolagem horizontal; conteúdo cresce naturalmente no celular menor. Em 390 × 844, os cards começam aproximadamente em 729 px; no notebook, em 642 px (antes, 861 px). O link para `#universos` mantém o título abaixo do cabeçalho fixo.
+
 ## Arte do GitHub
 
 Arquivo final: `public/images/dev-mascot.webp`. Gerado com a ferramenta integrada Imagegen; ilustração decorativa inspirada no Octocat para um link ao perfil, sem alegação de parceria. Texto do banner é HTML, separado da arte. Fonte sobre uso: https://docs.github.com/en/site-policy/other-site-policies/github-logo-policy
